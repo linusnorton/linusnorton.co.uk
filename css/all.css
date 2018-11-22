@@ -1,0 +1,562 @@
+@font-face {
+  font-family: 'ProximaNovaA-Bold';
+  src: url('../fonts/ProximaNovaA-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ProximaNovaA-Bold.otf')  format('opentype'),
+      url('../fonts/ProximaNovaA-Bold.woff') format('woff'),
+      url('../fonts/ProximaNovaA-Bold.ttf')  format('truetype'),
+      url('../fonts/ProximaNovaA-Bold.svg#ProximaNovaA-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaA-Thin';
+  src: url('../fonts/ProximaNovaA-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ProximaNovaA-Thin.otf')  format('opentype'),
+      url('../fonts/ProximaNovaA-Thin.woff') format('woff'),
+      url('../fonts/ProximaNovaA-Thin.ttf')  format('truetype'),
+      url('../fonts/ProximaNovaA-Thin.svg#ProximaNovaA-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaA-Semibold';
+  src: url('../fonts/ProximaNovaA-Semibold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ProximaNovaA-Semibold.otf')  format('opentype'),
+      url('../fonts/ProximaNovaA-Semibold.woff') format('woff'),
+      url('../fonts/ProximaNovaA-Semibold.ttf')  format('truetype'),
+      url('../fonts/ProximaNovaA-Semibold.svg#ProximaNovaA-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaA-Light';
+  src: url('../fonts/ProximaNovaA-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ProximaNovaA-Light.otf')  format('opentype'),
+      url('../fonts/ProximaNovaA-Light.woff') format('woff'),
+      url('../fonts/ProximaNovaA-Light.ttf')  format('truetype'),
+      url('../fonts/ProximaNovaA-Light.svg#ProximaNovaA-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNovaA-Regular';
+  src: url('../fonts/ProximaNovaA-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ProximaNovaA-Regular.otf')  format('opentype'),
+      url('../fonts/ProximaNovaA-Regular.woff') format('woff'),
+      url('../fonts/ProximaNovaA-Regular.ttf')  format('truetype'),
+      url('../fonts/ProximaNovaA-Regular.svg#ProximaNovaA-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@keyframes draw{
+  0%{height:0;}
+}
+
+header {
+    background: url('../images/banner.jpg') no-repeat center center #333231;
+    background-size: cover;
+    text-align: center;
+    padding: 175px 0;
+}
+nav {
+    margin: 50px 0;
+    z-index: 999;
+}
+nav ul {
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 35px;
+}
+nav ul li a {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'ProximaNovaA-Regular';
+    display: inline-block;
+}
+nav ul li a.active,
+nav ul li a:focus,
+nav ul li a:hover {
+    color: #ed004d;
+}
+.navi {
+    display: none;
+    color: #fff;
+    width: 50px;
+    position: absolute;
+    right: 25px;
+    top: 50px;
+}
+.navi span {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px auto;
+}
+.buttons a {
+    width: 270px;
+    padding: 15px;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid #ed004d;
+    margin: 15px;
+    color: #fff;
+    font-family: 'ProximaNovaA-Bold';
+}
+.about,
+.skills,
+.experience,
+.framework {
+    padding: 60px 0 0;
+    text-align: center;
+}
+.about h1,
+.skills h1,
+.experience h1,
+.framework h1 {
+    display: inline-block;
+    font-size: 40px;
+    color: #ee004d;
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'ProximaNovaA-Light';
+}
+.about h1:after,
+.skills h1:after,
+.experience h1:after,
+.framework h1:after {
+    content: "";
+    background: url('../images/line.png') no-repeat center center;
+    width: 120px;
+    height: 5px;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 100%;
+    right: 0;
+    left: 0;
+}
+
+.about-profile {
+    padding: 40px 0 70px;
+}
+.about-profile .row .col-md-4:first-child a {
+    font-size: 14px;
+    color: #ee004d;
+    text-transform: uppercase;
+    width: 265px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ee004d;
+    display: inline-block;
+    margin-top: 25px;
+}
+.about-profile .row .col-md-4:nth-child(2) img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #cccccc;
+}
+.about-profile .row .col-md-4:nth-child(3) h2 {
+    font-size: 16px;
+    color: #ee004d;
+    margin-top: 0;
+}
+.about-profile .row .col-md-4:nth-child(3) {
+    text-align: left;
+}
+.about-profile .row .col-md-4:nth-child(3) span {
+    color: #666;
+    display: block;
+    font-size: 16px;
+    border-bottom: 1px solid #cccccc;
+    padding: 18px 0;
+}
+.about-profile .row .col-md-4:nth-child(3) span:last-child {
+    border: transparent;
+    margin-bottom: 20px;
+}
+.social {
+    padding: 0;
+    margin: 0;
+}
+.social li {
+    display: inline-block;
+    border: 1px solid #cccccc;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding: 10px;
+}
+.about-detail {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+}
+
+.about-detail a {
+  color: #ee004d;
+}
+
+.about p {
+    font-size: 16px;
+    color: #666;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+.skills {
+    background: url('../images/banner1.jpg') no-repeat center center #333231;
+    background-size: cover;
+    padding-bottom: 50px;
+}.skills .row {
+    margin-top: 50px;
+    text-align: center;
+}
+.skills .row .col-md-6:first-child {
+    position: relative;
+}
+.skills .row .col-md-6:first-child:after {
+    content: "";
+    background: url('../images/dotted-line.png') no-repeat center center;
+    background-size: 100% 100%;
+    width: 23px;
+    height: 280px;
+    display: inline-block;
+    position: absolute;
+    left: 98%;
+    top: 51px;
+}
+.skills h2 {
+    font-size: 24px;
+    color: #ee004d;
+    text-transform: uppercase;
+}
+.skills ul {
+    color: #fff;
+    font-size: 20px;
+    padding: 0;
+}
+.skills ul li {
+    padding: 13px 0;
+    list-style: none;
+}
+.experience {
+    padding-bottom: 75px;
+}
+.experience .row {
+    padding: 30px 0;
+}
+.experience-circle {
+    background-color: #ee004d;
+    text-align: center;
+    width: 170px;
+    height: 170px;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.experience-circle span {
+    display: block;
+}
+.experience-detail {
+    text-align: left;
+}
+.experience-detail h2 {
+    color: #ee004d;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.experience-detail h3 {
+    color: #666;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: bold;
+}
+.experience-detail p {
+    font-size: 16px;
+    color: #666;
+}
+.framework {
+    background: url('../images/framework-bg.jpg') no-repeat center center #ee004d;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.framework h1 {
+    color: #fff;
+}
+.framework .chart {
+    display:table;
+    table-layout: fixed;
+    width:100%;
+    height:400px;
+    margin:0 auto;
+    padding: 175px 0 100px;
+}
+.framework .chart li{
+    display:table-cell;
+    vertical-align:bottom;
+    height:400px;
+}
+.framework .chart li span {
+    margin: 0 10px;
+    position:relative;
+    display: block;
+    background: #fff;
+    /*animation: draw 1s ease-in-out;*/
+    color: #fff;
+    font-size: 18px;
+}
+.animation {
+    animation: draw 1s ease-in-out;
+}
+.framework .chart li span:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    padding: 5px 0 0;
+    display: block;
+    text-align: center;
+    content:attr(title);
+    word-wrap: break-word;
+    background: url('../images/vertical-line.png') no-repeat bottom;
+    height: 150px;
+    text-transform: uppercase;
+    font-family: 'ProximaNovaA-Bold';
+}
+.framework .chart li span:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding: 55px 0 0;
+    display: block;
+    text-align: center;
+    content:attr(percentage);
+    word-wrap: break-word;
+}
+.download {
+    background: url('../images/banner2.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+.download h1 {
+    font-family: 'ProximaNovaA-Light';
+    font-size: 72px;
+}
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #f5f5f5;
+}
+@media (max-width: 1199px) {
+    .experience .col-md-2 {
+        width: 22%;
+    }
+    .experience .col-md-10 {
+        width: 78%;
+    }
+    .framework .chart li span {
+        font-size: 12px;
+    }
+    .framework .chart li span:before {
+        height: 125px;
+    }
+    .framework .chart li span:after {
+        padding-top: 25px;
+    }
+}
+@media (min-width:991px) {
+.fixed {
+    position: fixed;
+    background-color: #272828;
+    top: 0;
+    width: 100%;
+    margin: 0;
+}
+}
+@media (max-width: 991px) {
+    .navi {
+        display: block;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        background-color: #272828;
+        width: 275px;
+    }
+    nav ul li {
+        display: block;
+    }
+/*    nav ul li a {
+        color: #ed004d;
+    }*/
+    .logo {
+        width: 300px;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .profile-pic {
+        padding: 25px 0;
+    }
+    .skills .row .col-md-6:first-child:after {
+        display: none;
+    }
+    .experience .col-md-2 {
+        width: 30%;
+        float: left;
+    }
+    .experience .col-md-10 {
+        width: 70%;
+        float: left;
+    }
+    .framework .chart li span:before {
+        font-size: 10px;
+    }
+    .download h1 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .experience .col-md-2,
+    .experience .col-md-10 {
+        width: auto;
+        float: none;
+    }
+    .framework .chart {
+        padding: 75px 0;
+        height: 200px;
+    }
+    .framework .chart li {
+        height: 200px;
+    }
+    .framework .chart li span {
+        margin: 0 5px;
+    }
+    .framework .chart li span:before {
+        word-wrap: initial;
+        background: transparent;
+        height: 60px;
+        -ms-transform: rotate(-75deg); /* IE 9 */
+        -webkit-transform: rotate(-75deg); /* Safari */
+        transform: rotate(-75deg);
+        padding-top: 20px;
+    }
+    .download h1 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 500px) {
+    header {
+        padding: 125px 0 50px;
+    }
+    .logo {
+        width: 200px;
+    }
+    .navi span {
+        width: 25px;
+        margin: 5px auto;
+    }
+    nav {
+        top: 35px;
+    }
+    .buttons a {
+        width: 200px;
+        padding: 10px;
+        font-size: 12px;
+        margin: 5px;
+    }
+    .about, .skills, .experience, .framework {
+        padding-top: 25px;
+    }
+    .about h1,
+    .skills h1,
+    .experience h1,
+    .framework h1 {
+        font-size: 24px;
+    }
+    .about-profile {
+        padding: 10px 0 25px;
+    }
+    .about p {
+        font-size: 12px;
+    }
+    .about-profile .row .col-md-4:first-child a {
+        font-size: 12px;
+        width: 200px;
+        padding: 10px;
+    }
+    .about-profile .row .col-md-4:nth-child(2) img {
+        width: 200px;
+        height: 200px;
+    }
+    .about-profile .row .col-md-4:nth-child(3) h2,
+    .about-profile .row .col-md-4:nth-child(3) span {
+        font-size: 14px;
+    }
+    .about-detail {
+        padding: 25px 0;
+    }
+    .about p {
+        padding-top: 5px;
+    }
+    .skills {
+        padding-bottom: 25px;
+    }
+    .skills .row {
+        margin-top: 0;
+    }
+    .skills h2 {
+        font-size: 16px;
+    }
+    .skills ul {
+        font-size: 12px;
+    }
+    .skills ul li {
+        padding: 7px 0;
+    }
+    .experience {
+        padding-bottom: 25px;
+    }
+    .experience-circle {
+        font-size: 12px;
+    }
+    .experience .row {
+        padding: 0;
+    }
+    .experience-detail h2 {
+        font-size: 16px;
+    }
+    .experience-detail h3 {
+        font-size: 14px;
+    }
+    .experience-detail p {
+        font-size: 12px;
+    }
+    .framework .chart {
+        width: 95%;
+    }
+    .download {
+        padding: 25px 0;
+    }
+    .download h1 {
+        font-size: 26px;
+    }
+}
